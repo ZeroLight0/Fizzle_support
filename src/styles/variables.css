@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --color-primary: hsl(142, 75%, 36%);
+  --color-primary-hover: hsl(142, 64%, 53%);
+  --color-primary-dark: hsl(158, 64%, 12%);
+  /* --color-secondary: #f59e0b; */
+  --color-error: #dc2626;
+  --color-background: #fff2e0;
+  --btn-hover: hsl(28, 100%, 88%);
+  --color-text: hsl(159, 32%, 45%);
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Fonts */
+  --font-family: "Noto Sans", sans-serif;
+  --font-size-base: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-weight-semibold: 500px;
+  --font-weight-bold: 700;
+
+  /* Border Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}

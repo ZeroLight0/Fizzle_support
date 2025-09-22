@@ -1,0 +1,11 @@
+.mainText {
+  color: var(--color-primary-dark);
+}
+
+.paragraghText {
+  color: var(--color-text);
+}
+
+.member{
+    border-color: hsl(144, 33%, 85%);
+}

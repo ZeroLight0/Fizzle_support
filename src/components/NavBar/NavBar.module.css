@@ -1,0 +1,36 @@
+.logo {
+  color: var(--color-primary);
+  font-family: var(--font-family);
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  line-height: 32px;
+}
+
+.logo:hover {
+  color: #3ad473;
+}
+
+.button:hover {
+  background: #2ea75a;
+}
+
+.links {
+  font-size: var(--font-size-base);
+  line-height: 24px;
+  font-weight: 550;
+  color: var(--color-text);
+  font-family: var(--font-family);
+}
+
+.links:hover,
+.links:active {
+  color: var(--color-primary);
+}
+
+nav {
+  border-color: hsl(144, 33%, 85%);
+}
+
+.button {
+  background: var(--color-primary);
+}

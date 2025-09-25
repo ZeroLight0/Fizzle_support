@@ -5,19 +5,18 @@ import ShopCard from "../components/ShopCard/ShopCard.jsx";
 function ShopPage() {
   const products = [
     {
-      image: "https://cdn-icons-png.flaticon.com/512/3515/3515278.png",
-      title: "Classic Chocolate Cupcakes",
+      image: "/cupcake.png",
+      title: "Classic Strawberry Cupcakes",
       badge: "Popular",
       price: "12.99",
       description:
-        "Rich, moist chocolate cupcakes with vanilla frosting. Pack of 6.",
+        "Rich, moist Vanilla cupcakes with Strawberry frosting. Pack of 6.",
     },
     {
       image: "https://cdn-icons-png.flaticon.com/512/1046/1046784.png",
-      title: "Vanilla Delight Cupcakes",
+      title: "Meaty Delight Burgers",
       price: "10.99",
-      description:
-        "Fluffy vanilla cupcakes topped with creamy frosting. Pack of 6.",
+      description: "Meaty Burgers with only the best ingredients. Box of 3",
     },
     {
       image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
@@ -25,31 +24,30 @@ function ShopPage() {
       badge: "New",
       price: "14.99",
       description:
-        "Decadent red velvet cupcakes with cream cheese frosting. Pack of 6.",
+        "Meaty Burgers with only the best ingredients and our special Mustard seed buns. Box of 3",
     },
     {
-      image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
-      title: "Red Velvet Cupcakes",
-      badge: "New",
-      price: "14.99",
+      image: "/cake.png",
+      title: "Fluffy Chocolate Cake",
+      price: "21.89",
       description:
-        "Decadent red velvet cupcakes with cream cheese frosting. Pack of 6.",
+        "Decadent Chocolate cake with cream cheese frosting. Pack of 6 slices.",
     },
     {
-      image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
-      title: "Red Velvet Cupcakes",
-      badge: "New",
-      price: "14.99",
+      image: "/yogurt.png",
+      title: "Sweet Yogurt Parfait",
+
+      price: "12.99",
       description:
-        "Decadent red velvet cupcakes with cream cheese frosting. Pack of 6.",
+        "Only the best and healthiest parfaits on the globe. Pack of 3.",
     },
     {
-      image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
-      title: "Red Velvet Cupcakes",
-      badge: "New",
-      price: "14.99",
+      image: "/strawberry.png",
+      title: "Frosted cream donuts",
+      badge: "Best seller",
+      price: "16.29",
       description:
-        "Decadent red velvet cupcakes with cream cheese frosting. Pack of 6.",
+        "Amazingly great ring donuts with strawberry frosting. Pack of 12.",
     },
   ];
 

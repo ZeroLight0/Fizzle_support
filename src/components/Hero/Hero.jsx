@@ -1,4 +1,6 @@
 import classes from "./Hero.module.css";
+import {Link} from "react-router-dom";
+
 
 function Hero() {
   return (
@@ -19,16 +21,16 @@ function Hero() {
           <div
             className={`${classes.buttons} flex gap-6 mt-4 flex-col sm:flex-row w-full sm:w-auto items-center justify-center  `}
           >
-            <button
+            <Link to="/shop"
               className={`${classes.shop} text-lg px-8.5 py-2 font-[600] sm:w-fit w-full rounded-sm `}
-            >
-              Shop Our Desserts
-            </button>
-            <button
+            >  
+            Shop Our Desserts</Link>
+            
+            <Link to="/about"
               className={`${classes.about} text-lg px-8.5 py-2 font-[600] sm:w-fit w-full rounded-sm`}
             >
               Learn About Us
-            </button>
+            </Link>
           </div>
         </div>
       </section>

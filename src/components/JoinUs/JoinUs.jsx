@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function JoinUs() {
   return (
     <>
@@ -43,9 +45,12 @@ function JoinUs() {
             our products, ingredients, or your orders. We're committed to your
             satisfaction and safety.
           </p>
-          <button className="text-[#16A249] text-sm/5 bg-white rounded-sm p-3 px-8 font-[500] text-nowrap mt-2 cursor-pointer hover:bg-[#d8fde7] hover:shadow-md transition duration-300">
+          <Link
+            to="/contact"
+            className="text-[#16A249] text-sm/5 bg-white rounded-sm p-3 px-8 font-[500] text-nowrap mt-2 cursor-pointer hover:bg-[#d8fde7] hover:shadow-md transition duration-300"
+          >
             Contact Support Team
-          </button>
+          </Link>
         </div>
       </section>
     </>

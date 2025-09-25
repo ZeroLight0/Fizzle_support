@@ -1,6 +1,21 @@
+import { useRef, useEffect } from "react";
+import gsap from "gsap";
+
 function ShopCard({ image, title, price, description, badge, onAddToCart }) {
+  const cardRef = useRef(null);
+  useEffect(() => {
+    gsap.from(cardRef.current, {
+      opacity: 0,
+      y: 40,
+      duration: 0.7,
+      ease: "power2.out",
+    });
+  }, []);
   return (
-    <div className="bg-white rounded-md border-1 border-[#E5E7EB] shadow-sm p-4 py-8 text-center flex flex-col">
+    <div
+      ref={cardRef}
+      className="bg-white rounded-md border-1 border-[#E5E7EB] shadow-sm p-4 py-8 text-center flex flex-col transition-transform duration-300 hover:scale-105"
+    >
       {/* Product Image */}
       <div className="flex justify-center mb-3">
         <img src={image} alt={title} className="w-20 h-20 object-contain" />

@@ -10,8 +10,12 @@ function NavBar() {
   return (
     <nav className="flex justify-between items-center p-4 border-b-1 bg-white ">
       {/* Logo */}
-      <a href="">
-        <h1 className={classes.logo}>Fizzle</h1>
+      <a href="/">
+        <img
+          src="/image.png"
+          alt="Fizzle Logo"
+          className="h-10 w-auto max-w-[140px] object-contain md:h-12 lg:h-14 transition-all duration-300"
+        />
       </a>
 
       {/* Desktop Menu */}
@@ -44,11 +48,12 @@ function NavBar() {
         >
           <IoCartOutline className="w-5 h-5" />
         </Link>
-        <button
+        <Link
+          to="/contact"
           className={`${classes.button} py-2.5 px-4 text-white font-[600] rounded-sm w-fit text-sm cursor-pointer`}
         >
           Contact Us
-        </button>
+        </Link>
       </div>
 
       {/* Mobile Hamburger Button */}
@@ -106,14 +111,17 @@ function NavBar() {
         <Link
           to="/cart"
           className="hover:bg-[#ffdec2] p-2 flex justify-center items-center rounded-sm"
+          onClick={() => setIsOpen(!isOpen)}
         >
           <IoCartOutline className="w-6 h-6" />
         </Link>
-        <button
+        <Link
+          to="/contact"
           className={`${classes.button} py-2 px-4 text-white font-[600] rounded-sm w-fit cursor-pointer`}
+          onClick={() => setIsOpen(!isOpen)}
         >
           Contact Us
-        </button>
+        </Link>
       </div>
     </nav>
   );

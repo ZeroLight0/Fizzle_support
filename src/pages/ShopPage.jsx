@@ -55,19 +55,20 @@ function ShopPage() {
 
   return (
     <>
-      <div className="min-h-screen bg-gray-100 p-6 py-16">
-        <div className="text w-[55%] text-center flex flex-col gap-6">
-          <h1 className="text-4xl font-bold text-center text-[#0B3224]">
+      <div className="min-h-screen bg-gradient-to-br from-[#f8f8f8] to-[#e6f4ee] px-2 py-8 flex flex-col items-center w-full">
+        {/* Hero Section */}
+        <section className="w-full max-w-4xl mx-auto flex flex-col items-center text-center gap-5 mb-10 px-2">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#16A249] mb-2">
             Our Delicious Products
           </h1>
-          <p className="text-xl font-[400] text-[#4E977D]">
+          <p className="text-lg md:text-xl text-[#4E977D] max-w-2xl">
             Discover our range of certified gluten-free desserts, made with love
             and priced with care.
           </p>
-        </div>
+        </section>
 
         {/* Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="w-full max-w-6xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-2">
           {products.map((product, index) => (
             <ShopCard
               key={index}

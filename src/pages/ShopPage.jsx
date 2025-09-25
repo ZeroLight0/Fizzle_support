@@ -20,7 +20,7 @@ function ShopPage() {
     },
     {
       image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
-      title: "Red Velvet Cupcakes",
+      title: "Mustard Seed Buns",
       badge: "New",
       price: "14.99",
       description:

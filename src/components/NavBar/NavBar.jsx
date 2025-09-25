@@ -52,7 +52,10 @@ function NavBar() {
       </div>
 
       {/* Mobile Hamburger Button */}
-      <button className="md:hidden text-2xl" onClick={() => setIsOpen(!isOpen)}>
+      <button
+        className="md:hidden text-2xl cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         {isOpen ? <HiX /> : <HiMenuAlt3 />}
       </button>
 
@@ -64,22 +67,38 @@ function NavBar() {
       >
         <ul className="flex flex-col gap-4 items-center">
           <li>
-            <Link to="/" className={`${classes.links}`}>
+            <Link
+              to="/"
+              className={`${classes.links}`}
+              onClick={() => setIsOpen(!isOpen)}
+            >
               Home
             </Link>
           </li>
           <li>
-            <Link to="/about" className={`${classes.links}`}>
+            <Link
+              to="/about"
+              className={`${classes.links}`}
+              onClick={() => setIsOpen(!isOpen)}
+            >
               About
             </Link>
           </li>
           <li>
-            <Link to="/shop" className={`${classes.links}`}>
+            <Link
+              to="/shop"
+              className={`${classes.links}`}
+              onClick={() => setIsOpen(!isOpen)}
+            >
               Shop
             </Link>
           </li>
           <li>
-            <Link to="/blog" className={`${classes.links}`}>
+            <Link
+              to="/blog"
+              className={`${classes.links}`}
+              onClick={() => setIsOpen(!isOpen)}
+            >
               Blog
             </Link>
           </li>

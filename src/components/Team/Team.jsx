@@ -4,7 +4,7 @@ function Team() {
   return (
     <>
       <section className="bg-[#fdebd2] py-21 px-6 w-full flex flex-col items-center justify-center">
-        <div className="flex justify-center text-center items-center flex-col gap-6 w-[55%]">
+        <div className="flex justify-center text-center items-center flex-col gap-6 w-full max-w-xl md:w-[55%]">
           <h1
             className={`${classes.mainText} text-3xl md:text-4xl lg:text-5xl font-bold`}
           >
@@ -17,10 +17,10 @@ function Team() {
           </p>
         </div>
         <div
-          className={`${classes.members} w-full grid grid-cols-3 grid-rows-1 gap-10 text-center pt-17.5`}
+          className={`${classes.members} w-full grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-10 text-center pt-17`}
         >
           <div
-            className={`${classes.member} flex p-5 flex-col py-4 bg-white rounded-md border-1 hover:-translate-y-2 transition-all duration-300`}
+            className={`${classes.member} flex p-4 flex-col bg-white rounded-md border-1 hover:-translate-y-2 transition-all duration-300`}
           >
             {/* <img src="" alt="" /> */}
             <p className="text-6xl pb-5">👩‍💼</p>
@@ -38,7 +38,7 @@ function Team() {
           </div>
 
           <div
-            className={`${classes.member} flex p-5 py-4 flex-col bg-white rounded-md border-1 hover:-translate-y-2 transition-all duration-300`}
+            className={`${classes.member} flex p-4 flex-col bg-white rounded-md border-1 hover:-translate-y-2 transition-all duration-300`}
           >
             {/* <img src="" alt="" /> */}
             <p className="text-6xl pb-5">👨‍🍳</p>
@@ -55,7 +55,7 @@ function Team() {
           </div>
 
           <div
-            className={`${classes.member} flex p-5 py-4 flex-col bg-white rounded-md border-1 hover:-translate-y-2 transition-all duration-300`}
+            className={`${classes.member} flex p-4 flex-col bg-white rounded-md border-1 hover:-translate-y-2 transition-all duration-300`}
           >
             {/* <img src="" alt="" /> */}
             <p className="text-6xl pb-5">👩‍💻</p>

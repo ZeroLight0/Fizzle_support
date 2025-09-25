@@ -35,13 +35,26 @@ function ShopPage() {
       description:
         "Decadent red velvet cupcakes with cream cheese frosting. Pack of 6.",
     },
+    {
+      image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
+      title: "Red Velvet Cupcakes",
+      badge: "New",
+      price: "14.99",
+      description:
+        "Decadent red velvet cupcakes with cream cheese frosting. Pack of 6.",
+    },
+    {
+      image: "https://cdn-icons-png.flaticon.com/512/3075/3075977.png",
+      title: "Red Velvet Cupcakes",
+      badge: "New",
+      price: "14.99",
+      description:
+        "Decadent red velvet cupcakes with cream cheese frosting. Pack of 6.",
+    },
   ];
 
   return (
     <>
-      <div className="sticky top-0 z-10">
-        <NavBar />
-      </div>
       <div className="min-h-screen bg-gray-100 p-6 py-16">
         <div className="text w-[55%] text-center flex flex-col gap-6">
           <h1 className="text-4xl font-bold text-center text-[#0B3224]">

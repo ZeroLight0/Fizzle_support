@@ -7,9 +7,6 @@ import Footer from "../components/Footer/Footer.jsx";
 function HomePage() {
   return (
     <>
-      <div className="sticky top-0 z-10">
-        <NavBar />
-      </div>
       <Hero />
       <Team />
       <JoinUs />

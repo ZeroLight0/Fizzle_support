@@ -1,6 +1,6 @@
 function ShopCard({ image, title, price, description, badge, onAddToCart }) {
   return (
-    <div className="bg-white rounded-md border-1 border-[#E5E7EB] shadow-sm p-4 text-center bg-white flex flex-col">
+    <div className="bg-white rounded-md border-1 border-[#E5E7EB] shadow-sm p-4 py-8 text-center flex flex-col">
       {/* Product Image */}
       <div className="flex justify-center mb-3">
         <img src={image} alt={title} className="w-20 h-20 object-contain" />

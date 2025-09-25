@@ -3,11 +3,8 @@ import NavBar from "../components/NavBar/NavBar.jsx";
 function About() {
   return (
     <>
-      <div className="sticky top-0 z-10">
-        <NavBar />
-      </div>
-      <section className="aboutFizzle flex flex-col items-center text-center bg-[#FFFAF0] px-4">
-        <div className="flex flex-col items-center text-center pt-16 space-y-6 w-[53%]">
+      <section className="aboutFizzle flex flex-col items-center text-center bg-[#FFFAF0] px-6">
+        <div className="flex flex-col items-center text-center pt-10 space-y-6 w-full max-w-2xl">
           <h1 className="text-5xl/12 font-bold text-[#0B3224] ">
             About Fizzle
           </h1>
@@ -17,7 +14,7 @@ function About() {
             taste.
           </p>
         </div>
-        <div className="grid grid-cols-2 gap-12 pt-16 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 pt-16 w-full">
           <div className="flex flex-col justify-center items-start text-left gap-4">
             <h2 className="text-3xl font-[600] text-[#0B3224] mb-2">
               Our Story
@@ -56,11 +53,11 @@ function About() {
           </div>
         </div>
       </section>
-      <section className="quality my-16 p-12 w-full flex flex-col items-center bg-[#FFF2E0] text-center space-y-8 py-12">
+      <section className="quality mt-10 px-4 py-10 w-full flex flex-col items-center bg-[#FFF2E0] text-center space-y-8">
         <h3 className=" text-3xl/9 text-[#0B3224] font-[600] ">
           Quality & Safety
         </h3>
-        <div className="grid grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 w-full max-w-4xl mx-auto">
           <div className="flex flex-col justify-center items-center text-center gap-2">
             <p className="w-16 h-16 bg-[#16A249] rounded-full flex justify-center items-center text-3xl shadow-md text-white mb-2">
               ✓

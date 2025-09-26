@@ -1,5 +1,7 @@
 import NavBar from "../components/NavBar/NavBar.jsx";
 import ShopCard from "../components/ShopCard/ShopCard.jsx";
+import Toast from "../components/Toast.jsx";
+import { useState } from "react";
 // import ShopCard from "./../components/ShopCard/ShopCard";
 
 function ShopPage() {
@@ -51,6 +53,16 @@ function ShopPage() {
     },
   ];
 
+  const [toast, setToast] = useState({ show: false, message: "" });
+
+  const handleAddToCart = (title) => {
+    setToast({ show: true, message: `${title} added to cart!` });
+  };
+
+  const handleToastClose = () => {
+    setToast({ ...toast, show: false });
+  };
+
   return (
     <>
       <div className="min-h-screen bg-gradient-to-br from-[#f8f8f8] to-[#e6f4ee] px-2 py-8 flex flex-col items-center w-full">
@@ -75,10 +87,15 @@ function ShopPage() {
               badge={product.badge}
               price={product.price}
               description={product.description}
-              onAddToCart={() => alert(`${product.title} added to cart!`)}
+              onAddToCart={() => handleAddToCart(product.title)}
             />
           ))}
         </div>
+        <Toast
+          message={toast.message}
+          show={toast.show}
+          onClose={handleToastClose}
+        />
       </div>
     </>
   );

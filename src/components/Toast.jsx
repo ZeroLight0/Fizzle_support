@@ -25,7 +25,7 @@ function Toast({ message, show, onClose }) {
       `}
       style={{ maxWidth: "90vw" }}
     >
-      <div className="bg-[#16A249] text-white px-6 py-3 rounded-lg shadow-lg flex items-center gap-2 min-w-[200px] text-base font-medium justify-center">
+      <div className="bg-[#16A249] text-white px-4 py-3 rounded-lg shadow-lg flex items-center gap-2 min-w-[200px] text-base font-medium justify-center">
         <span className="text-xl">🛒</span>
         <span>{message}</span>
       </div>
